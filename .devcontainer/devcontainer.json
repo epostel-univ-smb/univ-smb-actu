@@ -7,8 +7,8 @@
       "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "updateContentCommand": "pip3 install --user -r requirements.txt",
-    "postCreateCommand": "",
+    "updateContentCommand": "",
+    "postCreateCommand": "pip3 install --user -r requirements.txt",
     "postAttachCommand": {
       "server": "flask --debug run"
     },
@@ -21,12 +21,13 @@
     "customizations": {
       "codespaces": {
         "openFiles": [
-          "templates/index.html"
+          "app.py"
         ]
       },
       "vscode": {
         "extensions": [
-          "ms-python.python"
+          "ms-python.python",
+          "streetsidesoftware.code-spell-checker"
         ]
       }
     },
